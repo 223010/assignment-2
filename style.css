@@ -13,3 +13,7 @@ width: 350px;
 height: 350px;
     background-image: url(./assets/hero-circle.png);
 }
+.divider{
+border-bottom: 1px solid #fff;
+opacity: 0.1;
+}
