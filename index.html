@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -12,7 +13,7 @@
     <header
       class="flex justify-between items-center lg:px-50 py-[30px] bg-[#1a0b2e] border-b-1 border-[rgba(65, 37, 103, 1)]"
     >
-      <img src="./assets/TechWave.png" alt="Logo" class="" />
+      <img src="./assets/TechWave.png" alt="Logo" class="" /> ]
       <nav>
         <ul class="flex space-x-4">
           <li><a href="#" class="text-white">About</a></li>
@@ -130,6 +131,166 @@
                 </div>
         </div>
     </section>
+    <section id="episodes" class="bg-[#1a0b2e] py-24">
+  <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-10">
+    <h2 class="text-center text-4xl sm:text-5xl font-extrabold text-white">
+      Featured Episodes
+    </h2>
+
+    <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1 (YouTube) -->
+           <article class="episode-card flex flex-col gap-4 rounded-3xl overflow-hidden">
+        <div class="relative overflow-hidden aspect-video">
+          <iframe
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/xb-fcoMMiTM?rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          
+        </div>
+        <div class="text-box flex flex-col gap-3 p-6">
+        <h3 class="text-xl font-bold text-white leading-snug">
+          The Future of AI in Everyday Life
+        </h3>
+
+        <p class="text-white/70 text-sm leading-relaxed">
+          Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.
+
+        <div class=" flex items-center gap-2 text-[#00ff88] text-sm font-semibold">
+            <i class="fas fa-clock"></i>
+          <span> 51 min</span>
+        </div>
+        </div>
+      </article>
+
+      <!-- Card 2 (Image) -->
+           <article class="episode-card flex flex-col gap-4 rounded-3xl overflow-hidden">
+        <div class="relative overflow-hidden aspect-video">
+          <iframe
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/xb-fcoMMiTM?rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          
+        </div>
+        <div class="text-box flex flex-col gap-3 p-6">
+        <h3 class="text-xl font-bold text-white leading-snug">
+          Building Better Habits for Remote Work
+        </h3>
+
+        <p class="text-white/70 text-sm leading-relaxed">
+          Practical strategies for staying productive and maintaining work-life balance in a remove environment.
+        </p>
+
+        <div class=" flex items-center gap-2 text-[#00ff88] text-sm font-semibold">
+            <i class="fas fa-clock"></i>
+          <span> 51 min</span>
+        </div>
+        </div>
+      </article>
+
+      <!-- Card 3 (Image) -->
+      <article class="episode-card flex flex-col gap-4 rounded-3xl overflow-hidden">
+        <div class="relative overflow-hidden aspect-video">
+          <iframe
+            class="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/xb-fcoMMiTM?rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          
+        </div>
+        <div class="text-box flex flex-col gap-3 p-6">
+        <h3 class="text-xl font-bold text-white leading-snug">
+          Career Growth in Tech: A Roadmap
+        </h3>
+
+        <p class="text-white/70 text-sm leading-relaxed">
+          Expert advice on navigating your tech career from junior developer to senior leadership roles.
+        </p>
+
+        <div class=" flex items-center gap-2 text-[#00ff88] text-sm font-semibold">
+            <i class="fas fa-clock"></i>
+          <span> 51 min</span>
+        </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Meet The Host -->
+<section id="host" class="bg-[#1a0b2e] py-24">
+  <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-10">
+    <h2 class="text-center text-4xl sm:text-5xl font-extrabold text-white">
+      Meet The Host
+    </h2>
+
+    <div class="host-card mt-12 rounded-[44px] px-8 py-10 sm:px-12 sm:py-12">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <div class="shrink-0">
+          <div class="host-avatar w-[210px] h-[210px] rounded-full overflow-hidden">
+            <img
+              src="./assets/host.png"
+              alt="Alex Kumar"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div class="flex-1 text-center md:text-left">
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-white">
+            Alex Kumar
+          </h3>
+
+          <p class="mt-4 text-white/70 leading-relaxed max-w-[760px]">
+            Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech
+            industry for over 10 years, working with startups and Fortune 500 companies. Through
+            TechWave, Alex shares insights from industry leaders and practical advice for anyone
+            looking to grow in tech.
+          </p>
+
+          <div class="mt-8 flex items-center justify-center md:justify-start gap-4">
+            <!-- LinkedIn -->
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <img src="./assets/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <!-- X -->
+            <a href="#" class="social-btn" aria-label="X">
+             <img src="./assets/x.png" alt="X">
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <img src="./assets/instagram.png" alt="Instagram">
+            </a>
+
+            <!-- YouTube -->
+            <a href="#" class="social-btn" aria-label="YouTube">
+              <img src="./assets/youtube.png" alt="YouTube">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     
   </body>
 </html>

@@ -17,3 +17,38 @@ height: 350px;
 border-bottom: 1px solid #fff;
 opacity: 0.1;
 }
+
+
+.episode-card{
+  background: rgba(35, 14, 61, 0.75);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+}
+
+
+/*meet the host*/
+.host-card{
+  background: linear-gradient(180deg, rgba(53,17,85,0.75) 0%, rgba(37,12,63,0.75) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+}
+
+.host-avatar{
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+.social-btn{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+.social-btn:hover{
+  border-color: rgba(255,255,255,0.22);
+  transform: translateY(-1px);
+  transition: 180ms ease;
+}
