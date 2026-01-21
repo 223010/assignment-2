@@ -1,54 +1,239 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+*p {
+color: var(--#FFFFFF, rgba(255, 255, 255, 1));
 
-.hero{
-width: 1600px;
-height: 760px;
-background-image: url(./assets/hero-bg.png) ;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+font-family: "Inter";
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
 }
 
-.img-box{
-width: 350px;
-height: 350px;
-    background-image: url(./assets/hero-circle.png);
+header .nav-links{
+  font-weight: 500;
+}
+.section-title{
+  font-size: 48px;
+  line-height:39px;
+}
+.hero {
+  width: 100%;
+  min-height: 760px;
+  background-image: url(./assets/hero-bg.png);
+  background-size: cover;
+  background-position: center 60px;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+
+.hero .img-box {
+  margin-bottom: 40px;
+}
+
+/*logo*/
+.logo {
+  width: 219px;
+  height: 32px;
+}
+
+/*about*/
+.about {
+  padding: 80px 200px 120px 200px;
+}
+
+.divider{
+  margin: 80px 0;
+  max-width: 1200px;
+}
+
+.counter-box .counter-p{
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+#episodes{
+  padding: 120px 200px 120px 200px;
+}
+
+#host{
+  padding: 0 200px 120px 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .section-title{
+    font-size: 32px;
+  }
+  * p{
+    font-size: 16px;
+  }
+  .hero {
+    min-width: 576;
+    min-height: 466px;
+    background-size: contain;
+    background-position: center calc(30%);
+    padding-top: 40px;
+    
+  }
+  .hero .hero-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .hero .button-box {
+    gap: 8px;
+  }
+  .logo {
+    width: 137px;
+    height: 20px;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    padding: 16px 20px;
+  }
+  .subsribe-top {
+    display: none;
+  }
+  .hero {
+    padding: 40px 20px;
+  }
+  .microphone {
+    width: 46.67px;
+    height: 70px;
+  }
+ .hero .img-box {
+    padding: 40px 20px;
+    margin-bottom: 24px;
+  }
+  .about {
+  padding: 40px 20px 40px 20px;
 }
 .divider{
-border-bottom: 1px solid #fff;
-opacity: 0.1;
+  margin: 40px 0;
+}
+/*counter*/
+.counter {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.counter-box .counter-num{
+  font-size: 40px;
+  font-weight: 900;
+}
+  /*reason section*/
+  .reason {
+    padding: 40px 20px 40px 20px;
+  }
+  .reason .features {
+    padding: 24px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+  #episodes{
+  padding: 40px 20px 40px 20px;
+}
+#host{
+  padding: 0 20px 40px 20px;
+}
+footer{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 }
 
+.img-box {
+  width: 350px;
+  height: 350px;
+  background-image: url(./assets/hero-circle.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  .img-box {
+    width: 240px;
+    height: 240px;
+  }
+}
 
-.episode-card{
+.new-badge {
+  animation: badgePop 1.2s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0, 255, 136, 0.35);
+}
+
+@keyframes badgePop {
+  0%,
+  100% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.08) translateY(-2px);
+  }
+}
+
+.divider {
+  border-bottom: 1px solid #fff;
+  opacity: 0.1;
+}
+
+.episode-card {
   background: rgba(35, 14, 61, 0.75);
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
 }
 
-
 /*meet the host*/
-.host-card{
-  background: linear-gradient(180deg, rgba(53,17,85,0.75) 0%, rgba(37,12,63,0.75) 100%);
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+.host-card {
+  background: linear-gradient(
+    180deg,
+    rgba(53, 17, 85, 0.75) 0%,
+    rgba(37, 12, 63, 0.75) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
 
-.host-avatar{
-  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+.host-avatar {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
-.social-btn{
+.social-btn {
   width: 44px;
   height: 44px;
   border-radius: 999px;
   display: grid;
   place-items: center;
-  background: rgba(0,0,0,0.08);
-  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.social-btn:hover{
-  border-color: rgba(255,255,255,0.22);
+.social-btn:hover {
+  border-color: rgba(255, 255, 255, 0.22);
   transform: translateY(-1px);
   transition: 180ms ease;
 }
+
+footer {
+  background-image: url(./assets/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media screen and (max-width: 576px){
+  footer{
+    min-height: 340px;
+    padding: 48px 0;
+    background-position: center;
+  }
+}
+
+
+
